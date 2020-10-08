@@ -1,0 +1,416 @@
+body {
+  margin: 0;
+  margin-top: 50px;
+  background-image: url(img/web-style/space.jpg);
+}
+
+
+/*.wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+@media screen and (max-width: 350px){
+.wrapper {
+  width: 35%;
+}
+header {
+  width: 35%;
+}
+}
+/*@media screen and (max-width: 768px){
+.wrapper {
+  width: 50%;
+}
+header {
+  width: 50%;
+}
+}
+*/
+
+header {
+  display: flex; /* display: flex; er vigtig til at sætte elementer op */
+  position: fixed; /*"menuen" følger med*/
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 68px;
+  width: 100%;
+  background-color: black;
+  border: 0px solid white;
+  background: rgba(0, 0, 0, 0.9);
+
+}
+
+
+header .fa-facebook {
+  font-size: 26px;
+margin: 0;
+margin-left: 1303px;
+margin-top: 42px;
+
+}
+header .fa-facebook:hover {
+  color: white;
+}
+
+header .fa-instagram {
+  font-size: 26px;
+margin: 0;
+margin-left: 1300px;
+
+
+}
+
+header .fa-instagram:hover {
+  color: white;
+}
+
+header .logo1 {
+  width: 68px;
+}
+
+header a {
+  text-decoration: none;
+  color: #cecece;
+}
+
+li a:hover {
+  color: white;
+}
+
+li a:active {
+  color: white;
+}
+
+header ul {
+  margin: 0;
+  padding-top: 10px;
+
+}
+
+header li {
+  margin-left: 2px;
+  display: inline;
+  padding-left: 44px;
+  padding-right: 84px;
+  font-family: 'Oswald', helvetica, tahoma, sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+#forside {
+  background-image: url(img/web-style/space.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 724px;
+  display: flex;
+  flex-wrap: wrap;
+  border: 0px solid white;
+  justify-content: center; /*hozontalt centreret*/
+  align-items: center; /*vertikalt centreret*/
+}
+
+.navn-forside {
+  color: white;
+  font-size: 174px;
+  font-family: 'Oswald', helvetica, tahoma, sans-serif;
+  ,
+  font-weight: 700;
+  margin: 0;
+}
+
+.titel-forside {
+  color: white;
+  font-size: 54px;
+  font-family: 'Oswald', helvetica, tahoma, sans-serif;
+  font-weight: 400;
+  letter-spacing: 24px;
+  margin: 0;
+  margin-top: -50px;
+  padding-left: 34px;
+  text-align: center;
+}
+
+
+
+#portfolio {
+  background-color: black;
+  width: 100%;
+  height: 202px;
+  display: flex;
+  flex-wrap: wrap;
+  border: 0px solid white;
+
+}
+
+.titel-portfolio {
+  margin: 0 auto;
+  margin-top: 54px;
+  text-align: center;
+  font-family: 'Oswald', helvetica, tahoma, sans-serif;
+  font-size: 80px;
+  font-weight: 500;
+  color: white;
+}
+
+#portfolio-content {
+  background-color: black;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  border: 0px solid white;
+}
+
+.portfolio-grid {
+width: 100%;
+  padding-left: 12px;
+  padding-right: 12px;
+display: flex;
+flex-wrap: wrap;
+height: 1100px;
+justify-content: center;
+justify-content: space-around;
+}
+div img {
+  padding: 0px 12px 32px 12px;
+}
+/*evt forsøg at lave et hover lay-over med en kort tekst når man kører musen over et billede */
+
+#about {
+  height: 700px;
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  border: 0px solid white;
+justify-content: center;
+
+}
+
+.titel-ommig {
+  margin: 0 auto;
+  margin-top: 54px;
+  font-family: 'Oswald', helvetica, tahoma, sans-serif;
+  font-size: 80px;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+
+}
+
+.p-ommig {
+  margin: 0 auto;
+  margin-left: 178px;
+  margin-right: 178px;
+  padding: 0;
+  line-height: 42px;
+  font-family: 'Oswald', helvetica, tahoma, sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  color: white;
+}
+.p-ommig2 {
+  margin: 0 auto;
+  text-decoration: underline;
+  margin-left: 178px;
+  margin-right: 178px;
+  margin-top: -40px;
+  padding: 0;
+  font-family: 'Oswald', helvetica, tahoma, sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  color: white;
+
+
+}
+  .facts {
+    margin: 0 auto;
+    margin-left: 178px;
+    margin-right: 178px;
+    padding: 0;
+    font-family: 'Oswald', helvetica, tahoma, sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    color: white;
+
+  }
+
+.facts {
+  list-style-type: none;
+}
+
+  .imdb {
+    color: white;
+
+  }
+  .imdb:visited {
+    color: white;
+  }
+
+  .imdb:hover {
+    color: #0057f0;
+  }
+
+/* evt få taget og indsæt et "professionelt" portrætbillede*/
+
+  #contact {
+    height: 700px;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    border: 0px solid white;
+    width: 100%;
+
+  }
+
+  .kontakt-mig {
+    width: 900px;
+    text-align: left;
+  }
+
+
+    .titel-kontakt {
+      margin: 0;
+      margin-left: 54px;
+      margin-top: 54px;
+      font-family: 'Oswald', helvetica, tahoma, sans-serif;
+      font-size: 80px;
+      font-weight: 500;
+      color: white;
+    }
+
+    .tekst-kontakt {
+      margin: 0;
+      margin-left: 56px;
+      font-family: 'Oswald', helvetica, tahoma, sans-serif;
+      font-size: 34px;
+      font-weight: 200;
+      color: white;
+      width: 800px;
+    }
+
+.cv-kontakt {
+  margin: 0;
+  margin-top: -20px;
+  margin-left: 56px;
+  font-family: 'Oswald', helvetica, tahoma, sans-serif;
+  font-size: 30px;
+  font-weight: 200;
+  color: white;
+  width: 800px;
+
+}
+
+.cv {
+  color: white;
+}
+
+.cv:visited {
+color: white;
+}
+
+.cv:hover {
+  color: #0057f0;
+}
+
+.k-form {
+flex: auto;
+}
+
+  .form {
+    width: 400px;
+    height: 446px;
+    background: white;
+    border-radius: 6px;
+    margin-top: 224px;
+    padding: 20px 30px;
+    max-width: auto;
+    box-sizing: border-box;
+    font-family: helvetica, sans-serif;
+
+  }
+
+  h2 {
+    margin: 0;
+    margin-top: 10px;
+    padding-top: 4px;
+    padding-left: 0px;
+    width: 180px;
+    color: #707070;
+    font-family: 'Oswald', helvetica, tahoma, sans-serif;
+    letter-spacing: 1.5px;
+    font-size: 26px;
+  }
+
+  input {
+    width: 100%;
+    padding: 0;
+    padding-top: 9px;
+    padding-left: 10px;
+    padding-bottom: 4px;
+    color: #707070;
+    box-sizing: border-box;
+    background: none; /*ingen baggrund*/
+    border: 0;
+    font-family: helvetica, sans-serif;
+    font-size: 16px;
+    transition: all .4s;
+    border-bottom: 2px solid #b3b3b3
+  }
+
+  input:focus { /*det input-felt, der er i brug*/
+    border-bottom: 2px solid #707070;
+  }
+
+  p:before {
+    content: attr(type); /*content bruges til at 'indsætte' ny input / erstatte et element. attr indsætter en bestemt atributs 'værdi', i dette tilfælde 'type', som er koblet sammen med navn, e-mail osv i kontaktformularen*/
+    display: block;
+    margin: 28px 0 0;
+    font-size: 14px;
+    color: #707070;
+  }
+
+  button {
+    float: right;
+    padding: 0px 12px;
+    margin: 0;
+    font-family: helvetica, sans-serif;
+    border: 2px solid #b3b3b3;
+    border-radius: 6px;
+    background: 0;
+    color: #b3b3b3;
+    transition: all .4s;
+  }
+
+  button:hover {
+    color: #707070;
+    border-color: #707070;
+
+  }
+
+.inner-section-kontakt {
+  display: flex;
+}
+
+#footer {
+  height: 40px;
+  background-color: black;
+  width: 100%
+  display: flex;
+  flex-wrap: wrap;
+  border: 0px solid white;
+
+}
+
+.footer-content {
+color: white;
+margin-left: 20px;
+font-family: helvetica,sans-serif;
+}
